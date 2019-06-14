@@ -33,3 +33,8 @@ to_roman(4) # 'IV'
 to_roman(944) # 'CMXLIV'
 to_roman(150) # CL
 ```
+
+### Hint: Consider the data structure(s) that can be used to store numerical values, and how it can relate to string representations. Break the problem down... how many combinations are there really to consider?
+
+
+#### DO NOT concern yourself with very large numbers. Your algorithm should keep appending 'M' for each thousand. (Numbers over 3000 have different numerical representations)
