@@ -1,5 +1,22 @@
 # Roman Numerals
 
+## Part 0: Pseudocode!
+
+We always want to encourage you to pseudocode your "gameplan" for any challenge before actually writing code. Note that we won't mention writing psuedocode all the time, but it's good practice to implement (especially for new coders) when tackling challenges. Here's an example of how one might pseudocode for this challenge (again, don't expect us to do this for you for all challenges!). Note that CAPITALIZED items in the pseucode are meant to be placeholders for items to implement, not actual style of methods/variables). 
+
+```Python
+# 1. Write a method TO_ROMAN, TO_ROMAN takes in INPUT_NUMBER (an arabic number)
+# 2. Create a OUTPUT string, set to ''
+# 3. Create a ROMAN_NUMERAL_TO_ARABIC_MAP that includes roman numerals as keys, arabic numbers as values
+# 4. Iterate over ROMAN_NUMERAL_TO_ARABIC_MAP, keep track of ROMAN_NUMERAL and ARABIC_NUMBER
+# 5. Set EVENLY_DIVISIBLE_TIMES = INPUT_NUMBER / ARABIC_NUMBER:
+# 6. If EVENLY_DIVISIBLE_TIMES >= 1
+  # 6a. Append ROMAN_NUMERAL to OUTPUT EVENLY_DIVISIBLE_TIMES
+  # 6b. Subtract ARABIC_NUMBER from INPUT_NUMBER EVENLY_DIVISIBLE_TIMES
+# 7. Return OUTPUT
+```
+
+
 ## Part 1: Lazy Roman Numerals
 
 Given a number in today's numbers, (Arabic Numeral), return its equivalent in Roman Numerals in the lazy way. Lazy Roman Numerals is where Roman Numerals are added together (9 is `VIIII`, 4 is `IIII`). Here are Roman Numerals with their Arabic Numeral counterparts:
